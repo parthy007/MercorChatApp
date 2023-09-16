@@ -1,0 +1,9 @@
+.sm{
+    display: none;
+}
+
+@media screen and (max-width: 1200px) {
+    .sm{
+        display: block;
+    }
+}

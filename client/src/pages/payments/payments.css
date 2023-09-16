@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap');
+
+.payments{
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    scroll-snap-align: start;
+}
+.phonePayments{
+    width: 55vw;
+    height: 60vh;
+    position: absolute;
+    top: 30%;
+    left: 51%;
+    transform: translate(-51%,-30%);
+    z-index: 9;
+}
+.textWrapper{
+    width: 25vw;
+    height: 19vh;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: absolute;
+    top: 30vh;
+    left: 18vw;
+    z-index: 999;
+}
+.titlePayments{
+    color: #00D54B;
+    font-weight: 800;
+    font-size: 3rem;
+}
+.textPayments{
+    font-size: 1rem;
+    font-family: 'Mulish', sans-serif;
+    font-weight: 400;
+    color: #000000;
+}
+.column1{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 14vw;
+}
+.column2{
+    position: absolute;
+    bottom: 0;
+    right: 18vw;
+    z-index: 3;
+    width: 50vw;
+}
+.column3{
+    position: absolute;
+    right: 0;
+    bottom: 6vh;
+    width: 50vw;
+}
+.pillarSmall{
+    position: absolute;
+    width: 8vw;
+    height: 18vh;
+    bottom: 7vh;
+    left: 20vw;
+    z-index: 19;
+}
+.pillarMedium{
+    position: absolute;
+    bottom: 3vh;
+    width: 11vw;
+    height: 35vh;
+    left: 13vw;
+    z-index: 99;
+}
+.centerPillar{
+    bottom: 5vh;
+    left: 39vw;
+    z-index: 19;
+}
+.pillarLarge{
+    position: absolute;
+    bottom: 9vh;
+    left: 48vw;
+    width: 14vw;
+    z-index: 1;
+}
+.offCenterPillar{
+    bottom: -7vh;
+    left: 49vw;
+    z-index: 2;
+}
+.rightPillar{
+    left: 72vw;
+    z-index: 0;
+    bottom: 24vh;
+}
+
+@media screen and (max-width: 1200px){
+    .pillarMedium,
+    .column3
+    {
+        display: none;
+    }
+    .pillarLarge{
+        bottom: 63vh;
+        left: 135vh;
+    }
+    .pillarSmall{
+        bottom: 74vh;
+        left: 12vw;
+    }
+    .column2{
+        right: 1vw;
+    }
+    .phonePayments{
+        width: 60vw;
+        height: 50vh;
+        top: 20%;
+        transform: translate(-51%,-20%);
+    }
+    .textWrapper{
+        height: 17vh;
+        top: 61vh;
+        width: 36vw;
+        left: 32vw;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 998px){
+    .phonePayments{
+        width: 75vw;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .column1{
+        width: 20vw;
+    }
+    .column2{
+        width: 70vw;
+    }
+    .pillarSmall{
+        width: 16vw;
+        left: 6vw;
+    }
+    .phonePayments{
+        width: 88vw;
+        height: 46vh;
+    }
+    .pillarLarge{
+        bottom: 63vh;
+        width: 23vw;
+        left: 65vw;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .column1{
+        width: 25vw;
+    }
+    .column2{
+        width: 78vw;
+    }
+    .pillarSmall{
+        width: 18vw;
+        height: 12vh;
+    }
+    .phonePayments{
+        width: 105vw;
+        height: 34vh;
+    }
+    .pillarLarge{
+        width: 29vw;
+    }
+    .textWrapper{
+        height: 22vh;
+        top: 53vh;
+        width: 52vw;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}

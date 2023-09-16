@@ -1,0 +1,31 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: imported;
+  src: url(./fonts/Agrandir.ttf);
+}
+:root{
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+  font-family: imported;
+}
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color:darkgray;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: darkgray;
+  opacity: 0.5;
+}

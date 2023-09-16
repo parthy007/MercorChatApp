@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap');
+
+.investing{
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    background: url("../../assets//investing-rays.png") center/cover no-repeat #00D54B;
+    scroll-snap-align: start;
+}
+.mainTitle{
+    position: absolute;
+    color: white;
+    top: 10vh;
+    font-weight: 800;
+    font-size: 3rem;
+    left: 50%;
+    text-align: center;
+    transform: translateX(-50%);
+    width: max-content;
+}
+.floor{
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    height: 39.5vh;
+    background-color: white;
+    z-index: 1;
+}
+.stocksWrapper{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    gap: 1rem;
+    width: 25vw;
+    height: 21vh;
+    left: 8vw;
+    bottom: 48vh;
+}
+.stocksText{
+    font-family: 'Mulish', sans-serif;
+}
+.bitcoinText{
+    font-family: 'Mulish', sans-serif;
+}
+
+.bitcoinWrapper{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    gap: 1rem;
+    width: 27vw;
+    height: 21vh;
+    right: 3vw;
+    bottom: 48vh;
+}
+.stocks{
+    position: absolute;
+    top: 31vh;
+    left: 36vw;
+    z-index: 99;
+    width: 11.6vw;
+    height: 48vh;
+}
+.bitcoin{
+    position: absolute;
+    top: 31vh;
+    left: 53vw;
+    z-index: 99;
+    width: 11.6vw;
+    height: 48vh;
+}
+.graph1{
+    position: absolute;
+    bottom: 4vh;
+    z-index: 1;
+    left: 0;
+    width: 48vw;
+    height: 38vh;
+}
+.graph2{
+    position: absolute;
+    right: 0;
+    z-index: 19;
+    bottom: 29vh;
+    width: 17vw;
+}
+.graph3{
+    position: absolute;
+    right: -1vw;
+    z-index: 19;
+    bottom: 2vh;
+}
+
+@media screen and (max-width: 1200px){
+    .stocksWrapper,.bitcoinWrapper{
+        bottom: 55vh;
+    }
+    .stocks,.bitcoin{
+        width: 14vw;
+    }
+}
+
+@media screen and (max-width:998px) {
+    .stocks{
+        width: 16vw;
+        left: 34vw;
+    }
+    .bitcoin{
+        width: 16vw;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .graph1,
+    .graph2,
+    .graph3{
+        display: none;
+    }
+    .stocks{
+        top: 46vh;
+        left: 13vw;
+        width: 23vw;
+        height: 45vh;
+    }
+    .bitcoin{
+        top: 46vh;
+        left: unset;
+        right: 13vw;
+        width: 23vw;
+        height: 45vh;
+    }
+    .bitcoinWrapper{
+        right: 8vw;
+        bottom: 60vh;
+        text-align: justify;
+        width: 33vw;
+    }
+    .stocksWrapper{
+        bottom: 60vh;
+        text-align: justify;
+        width: 33vw;
+    }
+    .mainTitle{
+        top: 5vh;
+    }
+}
+
+
+@media screen and (max-width: 500px){
+    .mainTitle{
+        top: 3vh;
+        font-size: 2.5rem;
+    }
+    .stocks{
+        top: 18vh;
+        left: 15%;
+        transform: translateX(-15%);
+        width: 26vw;
+        height: 29vh;
+    }
+    .bitcoin{
+        top: unset;
+        left: unset;
+        bottom: 6vh;
+        right: 15%;
+        transform: translateX(15%);
+        width: 26vw;
+        height: 29vh;
+    }
+    .stocksWrapper{
+        top: 22vh;
+        bottom: unset;
+        text-align: justify;
+        width: 46vw;
+        height: 18vh;
+        right: 15%;
+        left: unset;
+        transform: translateX(15%);
+    }
+    .stocksTitle{
+        text-align: center;
+    }
+    .bitcoinWrapper{
+        bottom: 13vh;
+        left: 15%;
+        text-align: justify;
+        z-index: 99;
+        width: 46vw;
+        height: 18vh;
+        transform: translateX(-15%);
+    }
+    .bitcoinTitle{
+        text-align: center;
+    }
+}

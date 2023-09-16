@@ -1,0 +1,176 @@
+.home{
+    background: url("../../assets/blast.png") center/cover no-repeat black;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+    scroll-snap-align: start;
+}
+.homeWrapper{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: max-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.homeTextWrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+}
+.homeText{
+    line-height: 25vh;
+    font-size: 14vw;
+    color: #ffffff;
+}
+.second{
+    z-index: 99;
+}
+.phone{
+    position: absolute;
+    top: 50%;
+    left: 52%;
+    transform: translate(-52%, -50%);
+    width: 19vw;
+    height: 62vh;
+    z-index: 9;
+}
+.arrow{
+    position: absolute;
+    width: 1.125rem;
+    height: 1.875rem;
+    bottom: 4vh;
+    left: 50vw;
+}
+.footer{
+    position: absolute;
+    bottom: 3vh;
+    z-index: 9;
+    width: 100%;
+}
+.cube{
+    position: absolute;
+    width: 6vw;
+    height: 9vh;
+    top: 9vh;
+    left: 20vw;
+}
+.stairs{
+    position: absolute;
+    width: 13vw;
+    height: 34vh;
+    top: 11vh;
+    right: 10vw;
+}
+.cubes{
+    position: absolute;
+    width: 12vw;
+    height: 19vh;
+    bottom: 11vh;
+    left: 18vw;
+}
+.pillar{
+    position: absolute;
+    width: 17vw;
+    height: 50vh;
+    bottom: -12vh;
+    right: 20vw;
+}
+
+@media screen and (max-width: 1200px){
+    .footer{
+        display: none;
+    }
+    .homeText{
+        line-height: 19vh;
+        font-size: 18vw;
+    }
+    .phone{
+        height: 51vh;
+        width: 23vw;    
+    }
+    .cubes{
+        bottom: 9vh;
+        left: 12vw;
+    }
+    .pillar{
+        width: 20vw;
+        height: 49vh;
+        right: 16vw;
+    }
+}
+
+@media screen and (max-width:998px){
+    .homeText{
+        font-size: 20vw;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .homeText{
+        line-height: 13vh;
+        font-size: 18vw;
+    }
+    .phone{
+        height: 34vh;
+        width: 23vw;
+    }
+    .cube{
+        width: 11vw;
+        height: 9vh;
+        top: 12vh;
+        left: 15vw;
+    }
+    .cubes{
+        width: 19vw;
+        height: 18vh;
+    }
+    .pillar{
+        width: 26vw;
+        height: 46vh;
+        right: 8vw;
+    }
+    .stairs{
+        width: 23vw;
+        height: 28vh;
+        right: 5vw;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .homeWrapper{
+        width: 67vw;
+    }
+    .homeText{
+        line-height: 10vh;
+        font-size: 28vw;
+    }
+    .phone{
+        height: 28vh;
+        width: 36vw;
+    }
+    .cube{
+        width: 14vw;
+    }
+    .stairs{
+        width: 26vw;
+        height: 26vh;
+    }
+    .cubes{
+        width: 27vw;
+        height: 19vh;
+    }
+    .pillar{
+        width: 49vw;
+        right: 3vw;
+        height: 47vh;
+        
+    }
+}

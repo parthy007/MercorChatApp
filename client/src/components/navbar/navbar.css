@@ -1,0 +1,105 @@
+.wrapper{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 12vh;
+}
+.logo{
+    width: 5vw;
+    height: 7vh;
+}
+.titleWrapper{
+    display: flex;
+    gap: 1.5vw;
+}
+.title{
+    font-weight: 800;
+    font-size: .9vw;
+    color: #ffffff;
+    cursor: pointer;
+}
+.eyeWrapper{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.menu{
+    color: white;
+    font-size: 3rem;
+    display: none;
+}
+.eye{
+    width: 3.83vw;
+    height: 5vh;
+}
+
+@media screen and (max-width: 1200px){
+    .menu{
+        display: block;
+    }
+    .titleWrapper{
+        display: none;
+    }
+    .wrapper{
+        justify-content: space-between;
+        padding: 0 3rem;
+    }
+    .verticalNavbar{
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100vw;
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        z-index: 999; 
+        padding: 1rem; 
+        animation: slideIn 0.3s ease-in-out;
+    }
+    @keyframes slideIn {
+        from {
+          left: -100%; 
+        }
+        to {
+          left: 0; 
+        }
+    }
+
+    .verticalTitle{
+        font-size: 1.5rem; 
+        margin: 0.5rem 0; 
+        color: white;
+    }
+    .cut{
+        color: white;
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin: 2rem;
+        font-size: 2rem;
+    }
+    .eye{
+        width: 6vw;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .eye{
+        width: 7vw;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .wrapper{
+        padding: 0 1.5rem;
+    }
+    .eye{
+        width: 11vw;
+    }
+    .logo{
+        width: 7vw;
+    }
+}

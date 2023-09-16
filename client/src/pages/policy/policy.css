@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap');
+
+.policy{
+    height: 100vh;
+    background: url("../../assets/blast.png") center/cover no-repeat #000;
+    scroll-snap-align: start;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.policyWrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: self-start;
+    width: 50vw;
+    text-align: justify;
+    background-color: rgba(0,0,0,0.8);
+    height: max-content;
+}
+.policyTitle{
+    color: white;
+    font-size: 3rem;
+}
+.policyText{
+    font-family: 'Mulish', sans-serif;
+    width: 100%;
+    font-size: 1rem;
+    color: white;
+}
+.policyButton{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.policyBtn{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: black;
+    border: 1px solid white;
+    cursor: pointer;
+    width: 14vw;
+    border-radius: 7px;
+    padding: 1rem;
+}
+.btnText{
+    color: white;
+    width: max-content;
+    margin-left: 1vw;
+}
+.greenIcon{
+    width: 1.5vw;
+    height: 2.5vh;
+}
+.policyIcons{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+.socialIcon{
+    width: 2vw;
+    height: 4vh;
+}
+
+
+@media screen and (max-width: 768px){
+    .policyWrapper{
+        width: 66vw;
+    }
+    .policyBtn{
+        width: 21vw;
+    }
+    .greenIcon{
+        width: 2.5vw;
+        height: 2.5vh;
+    }
+    .socialIcon{
+        width: 4vw;
+        height: 4vh;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .policyWrapper{
+        width: 90vw;
+    }
+    .policyBtn{
+        width: 39vw;
+    }
+    .socialIcon{
+        width: 7vw;
+    }
+    .greenIcon {
+        width: 4vw;
+        height: 3vh;
+    }
+}

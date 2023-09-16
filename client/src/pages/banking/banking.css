@@ -1,0 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300&display=swap');
+
+.banking{
+    height: 100vh;
+    background-color: #00D54B;
+    position: relative;
+    overflow: hidden;
+    scroll-snap-align: start;
+}
+
+.phoneBanking{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 25vw;
+    height: 57vh;
+    z-index: 99;
+}
+.textWrapperBanking{
+    display: flex;
+    flex-direction: column;
+    width: 25vw;
+    height: 25.58vh;
+    gap: 1rem;
+    position: absolute;
+    top: 41vh;
+    left: 13vw;
+}
+.titleBanking{
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: white;
+}
+.textBanking{
+    font-weight: 400;
+    font-family: 'Mulish', sans-serif;
+    font-size: 1.125rem;
+}
+.bankingHole{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 19.5vw;
+    height: 19vh;
+}
+.bankingColumn{
+    position: absolute;
+    top: 11vh;
+    left: 4.625rem;
+    z-index: 1;
+    width: 8.5vw;
+    height: 25.5vh;
+}
+.bankingStairs2{
+    position: absolute;
+    bottom: 19vh;
+    left: 4vw;
+    height: 26.555vh;
+    width: 4.9vw;
+}
+.bankingTube{
+    position: absolute;
+    bottom: 0;
+    left: 39vw;
+    width: 8.8vw;
+    height: 14vh;
+}
+.bankingRamp2{
+    position: absolute;
+    bottom: 8vh;
+    left: 12vw;
+    width: 17.5vw;
+    height: 23vh;
+}
+.bankingRamp1{
+    position: absolute;
+    top: 30vh;
+    right: 24vw;
+    width: 18vw;
+    height: 23vh;
+}
+.bankingTrack1{
+    position: absolute;
+    top: 23vh;
+    width: 19vw;
+    left: 27vw;
+}
+.bankingTrack2{
+    position: absolute;
+    top: 2vh;
+    right: 15vw;
+    width: 16vw;
+    height: 20vh;
+}
+.bankingCubes{
+    position: absolute;
+    bottom: 12vh;
+    right: 23vw;
+    height: 16.7vh;
+    width: 14.75vw;
+}
+.bankingStaris1{
+    position: absolute;
+    top: 39vh;
+    right: 10vw;
+    width: 5.5vw;
+    height: 29.5vh;
+}
+.bankingMonster{
+    position: absolute;
+    bottom: 8vh;
+    right: 6vw;
+    width: 7.4vw;
+    height: 9.6vh;
+}
+.holeb{
+    position: absolute;
+    bottom: 0;
+    right: 20vw;
+}
+
+@media screen and (max-width: 1200px){
+    .bankingTube,
+    .bankingCubes,
+    .bankingRamp1,
+    .bankingTrack1{
+        display: none;
+    }
+    .phoneBanking{
+        top: 20%;
+        transform: translate(-50%,-20%);
+        width: 26vw;
+        height: 50vh;
+    }
+    .textWrapperBanking{
+        width: 36vw;
+        height: 24.6vh;
+        top: 61vh;
+        text-align: center;
+        left: 32vw;
+    }
+}
+
+
+@media screen and (max-width: 768px){
+    .phoneBanking{
+        width: 45vw;
+        height: 44vh;
+    }
+    .bankingStairs2{
+        width: 10vw;
+    }
+    .bankingHole{
+        width: 32vw;
+    }
+    .bankingColumn{
+        width: 12vw;
+    }
+    .bankingRamp2{
+        width: 22vw;
+        left: 10vw;
+    }
+    .holeb{
+        width: 50vw;
+    }
+    .bankingStaris1{
+        width: 8vw;
+    }
+    .bankingMonster{
+        width: 12vw;
+    }
+    .bankingTrack2{
+        width: 21vw;
+    }
+    .textWrapperBanking{
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+    .bankingStairs2,
+    .bankingStaris1,
+    .bankingColumn,
+    .bankingRamp2{
+        display: none;
+    }
+    .phoneBanking{
+        top: 35%;
+        transform: translate(-50%,-35%);
+        width: 56vw;
+        height: 30vh
+    }
+    .bankingTrack2{
+        right: 3vw;
+        width: 41vw;
+        top: 5vh;
+    }
+    .bankingHole{
+        width: 50vw;
+    }
+    .bankingMonster{
+        width: 20vw;
+    }
+    .textWrapperBanking{
+        width: 54vw;
+        height: 18.6vh;
+    }
+    .holeb{
+        width: 66vw;
+    }
+}
